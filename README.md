@@ -130,7 +130,3 @@ theme store      → 明暗主题（持久化）
 
 ---
 
-## 🔗 相关项目
-
-- **后端**：[toutiao_backend](../toutiao_backend/) — FastAPI 新闻 API
-- **AI 工具**：[Dify](../Dify/) — Dify 天气工具
