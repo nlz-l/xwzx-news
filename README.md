@@ -1,21 +1,55 @@
-# XWZX News
+# 新闻中心移动端前端
 
-Vue 3 + Vite mobile-style news frontend.
+这是一个基于 Vue 3 和 Vite 的移动端新闻应用前端项目，主要用于练习新闻类应用的页面组织、状态管理、路由跳转、接口请求和本地数据持久化。项目页面风格偏移动端，适合配合 `toutiao_backend` 后端一起联调。
 
-## Features
+## 主要功能
 
-- Home, category, detail, favorite, history, profile, login, and register pages
-- Pinia state management
-- Vue Router
-- i18n language files
-- Vant UI dependency
-- AI chat page
+- 首页新闻流、分类新闻、新闻详情页
+- 用户登录、注册、个人资料和设置页
+- 新闻收藏、浏览历史等个人化功能
+- AI 对话页面，用于扩展智能问答或新闻助手能力
+- 中英文语言包与主题状态管理
+- 使用 Pinia 管理用户、新闻、收藏、历史、语言和主题等状态
+- 使用 Vant 组件库构建移动端交互
 
-## Run
+## 目录结构
+
+```text
+src/
+  components/       公共组件，例如新闻卡片、底部导航
+  config/           接口地址等配置
+  i18n/             多语言配置和语言包
+  router/           Vue Router 路由定义
+  store/            Pinia 状态模块
+  views/            页面级组件
+```
+
+## 环境要求
+
+- Node.js 18 或更高版本
+- npm
+
+## 本地运行
 
 ```bash
 npm install
 npm run dev
 ```
 
-Configure the backend API base URL in `.env` if needed.
+常用命令：
+
+```bash
+npm run build      # 构建生产版本
+npm run preview    # 本地预览构建结果
+```
+
+## 接口配置
+
+后端接口基础地址可以在 `.env` 或 `src/config/api.js` 中配置。与后端联调时，请确认后端服务已启动，并且跨域配置允许前端开发地址访问。
+
+## 学习重点
+
+- Vue 3 组合式 API 的页面开发方式
+- Pinia 模块化状态管理与持久化
+- 前后端分离项目中的登录态、收藏、历史记录处理
+- 新闻详情、用户中心、AI 对话等页面之间的路由组织
